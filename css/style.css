@@ -36,7 +36,6 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: black;
- 
 }
 
 .top {
@@ -59,12 +58,11 @@ header {
 
 /* MAIN */
 
-main { 
+main {
     display: flex;
-    height:calc(100vh - 200px) ;
+    height: calc(100vh - 200px);
     justify-content: space-around;
     flex-wrap: wrap;
-    align-content: flex-start;
     overflow-y: auto;
 }
 
@@ -88,17 +86,15 @@ main {
     padding: 2px;
 }
 
-
 /* FOOTER */
 
 footer {
-     
     height: 100px;
     border: 1px solid black;
     align-items: center;
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .commands {
@@ -122,7 +118,7 @@ footer {
     flex-basis: 25%;
 }
 
-.commands .push .caret{
+.commands .push .caret {
     display: flex;
     justify-items: center;
 }
@@ -151,3 +147,25 @@ footer {
     align-items: center;
 }
 
+
+/* SOME EXTRA */
+
+.end-meeting-btn:hover{
+    color:grey;
+    background-color: red; 
+}
+
+.box:hover {
+    filter: brightness(1.1);
+    transform: scale(0.9);
+}
+
+.push:hover {
+    color: cyan;
+}
+
+.top li a:hover{
+    color:grey;
+    background-color: white;
+
+}
