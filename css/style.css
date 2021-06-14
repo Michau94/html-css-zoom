@@ -36,6 +36,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: black;
+ 
 }
 
 .top {
@@ -58,14 +59,13 @@ header {
 
 /* MAIN */
 
-main {
-    padding: 50px 0;
+main { 
     display: flex;
-    height: calc(100vh - 200px);
-    border: 1px dashed red;
-    width: 100%;
+    height:calc(100vh - 200px) ;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-content: flex-start;
+    overflow-y: auto;
 }
 
 .box {
@@ -80,10 +80,6 @@ main {
     margin-top: 10px;
 }
 
-.box img {
-    width: 100%;
-}
-
 .box .caller {
     color: white;
     margin: 5px;
@@ -92,11 +88,14 @@ main {
     padding: 2px;
 }
 
+
+/* FOOTER */
+
 footer {
+     
     height: 100px;
     border: 1px solid black;
     align-items: center;
-    padding: 0 5px;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -109,6 +108,7 @@ footer {
 
 .cmd-left {
     flex-basis: 20%;
+    align-items: center;
 }
 
 .cmd-center {
@@ -122,6 +122,11 @@ footer {
     flex-basis: 25%;
 }
 
+.commands .push .caret{
+    display: flex;
+    justify-items: center;
+}
+
 .commands .push {
     color: white;
     display: flex;
@@ -133,6 +138,7 @@ footer {
 }
 
 .commands .push .caret {
+    display: flex;
     justify-content: center;
 }
 
